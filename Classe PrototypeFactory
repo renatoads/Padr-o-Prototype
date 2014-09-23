@@ -1,0 +1,17 @@
+package prototype;
+
+public class PrototypeFactory {
+
+	Animal PrototypeAnimal;
+	
+	public PrototypeFactory(Animal animal) {
+		PrototypeAnimal = animal;
+		
+	}
+	
+	public Animal criarClone() {
+		return (Animal) PrototypeAnimal.clone();
+		
+	}
+		
+}
